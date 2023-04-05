@@ -7,4 +7,5 @@ package com.example.postsapp.base
 sealed class GeneralResponse<T> {
     class OnSuccess<T>(val response : T) : GeneralResponse<T>()
     class OnFailure<T>(val message : String) : GeneralResponse<T>()
+    class Test<T>() : GeneralResponse<T>()
 }
